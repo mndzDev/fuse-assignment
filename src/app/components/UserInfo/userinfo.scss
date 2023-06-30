@@ -1,0 +1,9 @@
+.avatar {
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    img {
+     object-fit: cover;
+    }
+}
+

@@ -1,0 +1,34 @@
+.input>input[type=text]{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 0 20px 0px 40px;
+    &::placeholder {
+        font-size: 16px;
+        color: #667085;
+        font-weight: 400;
+    }
+   
+}
+
+.input {
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    .search-icon {
+        position: absolute;
+        left: 14px;
+    }
+    .status-select, .select {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px 14px;
+        gap: 8px;
+        .selected-option {
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+tr {
+    height: 72px;
+    td {
+        box-sizing: border-box;
+        padding: 12px 24px;
+        font-size: 14px;
+        border-bottom: 1px solid #EAECF0;
+    }
+    td:first-child {
+        border-left: 1px solid #EAECF0;
+    }
+    td:last-child {
+        border-right: 1px solid #EAECF0;
+    }
+}

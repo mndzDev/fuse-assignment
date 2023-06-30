@@ -4,6 +4,7 @@ import { Header } from "../components/Header/Header";
 import DownloadIcon from "../components/Icons/Download";
 import NavBar from "../components/NavBar/NavBar";
 import { Tab } from "../components/Tab/Tab";
+import Orders from "./orders/page";
 import  './styles.scss';
 
 export default function Dashboard(){
@@ -57,15 +58,19 @@ export default function Dashboard(){
 
     return (
         <>
-            <NavBar/>
+
             <Header title="Orders" breadcrumbPages={pages} button={downloadButton}/>
             <div className="divider w-full border-b border-gray-200"></div>
-            {/* <div className="flex flex-col tabs">
+            <div className="flex flex-row justify-between mt-8 w-full gap-x-16 h-100 overflow-y-auto overflow-x-hidden">
+                <div className="flex flex-col tabs" style={{width: '167px'}}>
                 { tabs.map((tab, i) => (
                     <Tab key={i} label={tab.label} active={tab.active}/>
-                )) }
+                )) } </div>
+               
+                        <Orders/>
             </div>
-            <Breadcrumbs pages={pages}/> */}
+           
+           
         </>
     )
 }

@@ -1,0 +1,22 @@
+.pagination-container {
+    height: 40px;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    li {
+        color: #475467;
+        font-weight: 500;
+        font-size: 14px;
+        padding:12px;
+    }
+    li:first-child{
+        margin-right: auto;
+    }
+    li:last-child{
+        margin-left: auto;
+    }
+}

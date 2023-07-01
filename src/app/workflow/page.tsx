@@ -6,26 +6,26 @@ import './styles.scss';
 
 export default function Workflow(){
 
-    const pages = [
-        {
-            link: '',
-            name: 'Workflow',
-            current: false
-        },
-        {
-            link: '',
-            name: 'Cart Recovery Workflow ',
-            current: true
-        },
-    ]
+    // const pages = [
+    //     {
+    //         link: '',
+    //         name: 'Workflow',
+    //         current: false
+    //     },
+    //     {
+    //         link: '',
+    //         name: 'Cart Recovery Workflow ',
+    //         current: true
+    //     },
+    // ]
 
-    const downloadButton = 
-        <ActionButton label="Download all" type="full" icon={<DownloadIcon/>  }/>
+    // const downloadButton = 
+    //     <ActionButton label="Download all" type="full" icon={<DownloadIcon/>  }/>
    
     return (
         <>
-            <Header title='Cart Recovery Workflow' breadcrumbPages={pages} button={downloadButton}/>
+            {/* <Header title='Cart Recovery Workflow' breadcrumbPages={pages} button={downloadButton}/>
             <div className="divider w-full border-b border-gray-200"></div>
-            <CartRecovery/>
+            <CartRecovery/> */}
         </>
     )   }

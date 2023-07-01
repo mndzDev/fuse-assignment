@@ -1,6 +1,5 @@
-import { WorkFlowItem } from "@/app/components/WorkflowItem/WorkflowItem"
+import { WorkFlowItem } from "../../components/WorkflowItem/WorkflowItem";
 import './cartrecovery.scss';
-import Draggable, {DraggableCore} from 'react-draggable';
 
 export const CartRecovery = () => {
     return (
@@ -12,11 +11,7 @@ export const CartRecovery = () => {
                     <WorkFlowItem type='CONDITION'/>
                 </div>
                 <div className='workflow-playground border border-gray-200 w-full rounded-md'>
-                <Draggable>
-                    <div>
-                        <WorkFlowItem type="EMAIL"/>
-                    </div>
-                </Draggable>
+
                 </div>
             </div>
     )

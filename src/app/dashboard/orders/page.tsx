@@ -1,3 +1,4 @@
+"use client";
 import { Table } from '@/app/components/Table/Table';
 import { Input } from '../../components/Input/Input';
 import './styles.scss';

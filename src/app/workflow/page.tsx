@@ -28,28 +28,3 @@ export default function Workflow(){
         </>
     )
 }
-
-// export function Wsadd(){
-
-//     const pages = [
-//         {
-//             link: '',
-//             name: 'Workflow',
-//             current: false
-//         },
-//         {
-//             link: '',
-//             name: 'Cart Recovery Workflow ',
-//             current: true
-//         },
-//     ]
-
-//     
-   
-//     return (
-//         <>
-//             <Header title='Cart Recovery Workflow' breadcrumbPages={pages} button={downloadButton}/>
-//             <div className="divider w-full border-b border-gray-200"></div>
-//             <CartRecovery/>
-//         </>
-//     )   }

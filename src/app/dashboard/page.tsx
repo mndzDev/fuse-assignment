@@ -1,8 +1,6 @@
 import { ActionButton } from "../components/ActionButton/ActionButton";
-import { Breadcrumbs } from "../components/Breadcrumbs/Breadcrumbs";
 import { Header } from "../components/Header/Header";
 import DownloadIcon from "../components/Icons/Download";
-import NavBar from "../components/NavBar/NavBar";
 import { Tab } from "../components/Tab/Tab";
 import Orders from "./orders/page";
 import  './styles.scss';

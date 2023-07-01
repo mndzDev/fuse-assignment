@@ -1,7 +1,6 @@
 import { ActionButton } from '../components/ActionButton/ActionButton';
 import { Header } from '../components/Header/Header';
 import DownloadIcon from '../components/Icons/Download';
-import { WorkFlowItem } from '../components/WorkflowItem/WorkflowItem';
 import { CartRecovery } from './cart-recovery/CartRecovery';
 import './styles.scss';
 

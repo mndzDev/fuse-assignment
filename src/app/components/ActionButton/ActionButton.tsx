@@ -1,5 +1,9 @@
 import './actionButton.scss';
 
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
+
 interface ActionButtonProps {
     label?: string;
     type?: 'simple' | 'full' | 'link';
@@ -10,7 +14,7 @@ interface ActionButtonProps {
 export const ActionButton = ({label, type, icon, color}: ActionButtonProps):JSX.Element => {
     return (
         <>
-            <button style={type == 'link' ? {color: color} : {color: '#475467'}} className={`flex items-center actionbutton text-sm font-semibold ${type == 'full' ? 'actionbutton--full border border-gray-300 rounded-lg text-gray-700' : ''}`}>
+            <button style={type == 'link' ? {color: color} : {color: '#475467'}} className={`flex items-center actionbutton text-sm font-semibold ${type == 'full' ? 'actionbutton--full border border-gray-300 rounded-lg text-gray-700' : ''} ${inter.className}`}>
                 <div className='flex items-center justify-center gap-x-1 w-full h-full '>
                     {icon}
                     {label}

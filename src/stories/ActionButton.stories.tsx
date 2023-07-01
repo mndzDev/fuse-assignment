@@ -25,3 +25,11 @@ export const Full: Story = {
         icon: <SvgComponent color="#344054"/>
     }
 }
+
+export const Transparent: Story = {
+    args: {
+        label: 'Button',
+        type: 'link',
+        color: '#7F56D9'
+    }
+}

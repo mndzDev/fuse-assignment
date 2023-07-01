@@ -3,6 +3,10 @@ import DotIcon from '../Icons/Dot';
 import SearchIcon from '../Icons/Search';
 import './input.scss';
 
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] });
+
 interface InputProps {
     type: 'search' | 'select' | 'status_select' | 'text'
     label: string;
@@ -19,7 +23,7 @@ export const Input = ({type = 'text' , label, width = '183px', height = '44px', 
 
     return (
         <>
-            <div className='input-group'>
+            <div className={`${inter.className}`}>
                 <label className='font-medium text-sm text-gray-700'>{label}</label>
                 <div style={style} className='input w-full h-full border border-gray-300 rounded-lg flex items-center'>
                     {

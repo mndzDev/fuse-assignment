@@ -2,6 +2,9 @@ import CancelledIcon from '../Icons/Cancelled';
 import CheckIcon from '../Icons/Check';
 import RefundedIcon from '../Icons/Refunded';
 import './badge.scss';
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 interface BadgeProps {
     type: 'Paid' | 'Refunded' | 'Cancelled'
@@ -35,7 +38,7 @@ export const Badge = ({type}: BadgeProps) => {
         }
     }
 
-    return <div className={`badge font-medium text-xs rounded-3xl border ${getStyle()}`}>
+    return <div className={`${inter.className} badge font-medium text-xs rounded-3xl border ${getStyle()}`}>
            {getIcon()} {type}
     </div>
 }

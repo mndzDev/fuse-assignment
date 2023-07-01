@@ -5,6 +5,10 @@ import Workflow from "./workflow/page";
 import { NavBar } from "./components/NavBar/NavBar";
 import { EmptyState } from "./components/EmptyState/EmptyState";
 
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] });
+
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<string>('Dashboard');
 
@@ -13,7 +17,7 @@ export default function Home() {
     setCurrentPage(page);
   }
   return (
-    <main className="w-full h-full">
+    <main className={`${inter.className} w-full h-full`}>
       <NavBar onClickHandler={handlePageSelection} currentPage={currentPage}/>
       <div className="page-container px-20 pb-12 mt-12">
         {
